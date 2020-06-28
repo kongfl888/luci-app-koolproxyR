@@ -92,6 +92,8 @@ ifeq ($(ARCH),arm)
 endif
 ifeq ($(ARCH),arm64)
 	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
+else
+	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
 endif
 endef
 
